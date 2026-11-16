@@ -1,0 +1,7 @@
+reference_scenarios:
+  - id: pfoa_pfos_oral_repeated
+    output_file: ./validation/outputs/results_R_PFAS.csv
+    file_path: validation/R/run_westerhout_2024.R
+  - id: pfoa_pfos_initial_amounts
+    output_file: ./validation/outputs/results_R_PFAS_no_dosing.csv
+    file_path: validation/R/run_westerhout_2024_no_dosing.R

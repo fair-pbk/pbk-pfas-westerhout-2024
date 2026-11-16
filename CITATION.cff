@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+title: Antimony/SBML re-implementation PFAS PBK model Westerhout (2024)
+message: If you use this model, please cite it using the metadata from this file.
+type: software
+authors:
+  - family-names: Westerhout
+    given-names: Joost
+    orcid: 'https://orcid.org/0000-0001-9068-0916'
+    affiliation: Dutch National Institute for Public Health and the Environment (RIVM)
+  - family-names: Minnema
+    given-names: Jordi
+    orcid: 'https://orcid.org/0000-0002-1847-4218'
+    affiliation: Dutch National Institute for Public Health and the Environment (RIVM)
+  - family-names: Kruisselbrink
+    given-names: Johannes
+    affiliation: 'Wageningen University & Research, Biometris'
+    orcid: 'https://orcid.org/0000-0003-1673-5725'
+repository-code: 'https://github.com/fair-pbk/pbk-pfas-westerhout-2024'
+abstract: >-
+  Antimony/SBML re-implementation of the PFAS PBK model by Westerhout et al. 2024, according to the FAIR PBK standard.
+keywords:
+  - SBML
+  - Antimony
+  - PBK
+  - PBPK
+  - PFAS
+license: EUPL-1.2
+version: 1.0.0
