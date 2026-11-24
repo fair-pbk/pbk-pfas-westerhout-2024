@@ -9,12 +9,19 @@
     <p> 1) General model structure for PFAS. </p>
     <p> 2) Changed the calculation of CvenFree, Cven, CartFree and Cart to correctly present the free fraction. </p>
     <p> 3) Changed the &apos;Free&apos; in the lung differential equation to &apos;FreeLun&apos;. </p>
+    <p> 4) No built-in parameters for oral, drinking-water, inhalation, or dermal exposure. </p>
+    <p> 5) Body weight is parameterised by reference age and body weight and scaled by a delta body weight parameter. </p>
+    <p> 6) FBW, QfilC, VartC, and VvenC are exposed as parameters. </p>
   </body>
 </notes>
 
 ## Creators
 
-*not specified*
+| first-name   | last-name     | affiliation                                                           | email   |
+|:-------------|:--------------|:----------------------------------------------------------------------|:--------|
+| Joost        | Westerhout    | Dutch National Institute for Public Health and the Environment (RIVM) |         |
+| Jordi        | Minnema       | Dutch National Institute for Public Health and the Environment (RIVM) |         |
+| Johannes     | Kruisselbrink | Wageningen University & Research, Biometris                           |         |
 
 ## Overview
 
@@ -188,15 +195,15 @@
 | VGC           | fraction gut volume                                                                     | L/kg          | http://purl.obolibrary.org/obo/PBPKO_00509 |
 | VlunC         | fraction lung volume                                                                    | L/kg          | http://purl.obolibrary.org/obo/PBPKO_00098 |
 | VPlasC        | fraction plasma volume                                                                  | L/kg          | http://purl.obolibrary.org/obo/PBPKO_00104 |
-| VartC         | fraction arterial plasma volume                                                         | dimensionless | *not specified*                            |
-| VvenC         | fraction venous plasma volume                                                           | dimensionless | *not specified*                            |
-| Htc           | hematocrit                                                                              | dimensionless | *not specified*                            |
+| VartC         | fraction arterial plasma volume                                                         | dimensionless | http://purl.obolibrary.org/obo/PBPKO_00627 |
+| VvenC         | fraction venous plasma volume                                                           | dimensionless | http://purl.obolibrary.org/obo/PBPKO_00628 |
+| Htc           | hematocrit                                                                              | dimensionless | http://purl.obolibrary.org/obo/PBPKO_00527 |
 | BSA           | total area of the skin                                                                  | cm^2          | http://purl.obolibrary.org/obo/PBPKO_00010 |
-| SkinThickness | skin thickness                                                                          | cm            | *not specified*                            |
+| SkinThickness | skin thickness                                                                          | cm            | http://purl.obolibrary.org/obo/PBPKO_00635 |
 | FSkinExposed  | fraction of skin exposed                                                                | dimensionless | http://purl.obolibrary.org/obo/PBPKO_00061 |
 | MW            | molar weight                                                                            | g/mol         | http://purl.obolibrary.org/obo/PBPKO_00127 |
 | logP          | logP                                                                                    | dimensionless | http://purl.obolibrary.org/obo/PBPKO_00131 |
-| VP            | vapor pressure                                                                          | kg/m/s^2      | *not specified*                            |
+| VP            | vapor pressure                                                                          | kg/m/s^2      | http://purl.obolibrary.org/obo/PBPKO_05003 |
 | Tmc           | maximum resorption rate                                                                 | ug/d/kg^0.75  | http://purl.obolibrary.org/obo/PBPKO_00535 |
 | Kt            | resorption affinity                                                                     | ug/L          | http://purl.obolibrary.org/obo/PBPKO_00536 |
 | kurinec       | urinary elimination rate constant                                                       | /d.kg^0.25    | http://purl.obolibrary.org/obo/PBPKO_00520 |
