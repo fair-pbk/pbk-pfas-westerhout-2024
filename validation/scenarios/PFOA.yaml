@@ -4,7 +4,7 @@ model_instances:
   - id: SBML
     label: SBML
     model_path: ./model/pbk_pfas_westerhout_2024.sbml
-    param_file: ./validation/params_pbk_pfas_westerhout_2024_PFOA.csv
+    param_file: ./parametrisations/pbk_pfoa_westerhout_2024.params.csv
     target_mappings:
       AArt: 'AArt_Plas'
       CArt: '[AArt_Plas]'
