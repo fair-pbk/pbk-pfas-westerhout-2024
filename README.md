@@ -14,11 +14,17 @@ The file [pbk_pfas_westerhout_2024.ant](model/pbk_pfas_westerhout_2024.ant) is t
 
 Compared to the original model code, the following changes were made in this reimplementation:
 
-1. Instead of presenting two separate implementations for PFOS and PFOA, this model implementation represents a generic model structure, applicable also for PFAS.
+1. **Generic structure for PFOS and PFOA:** Instead of presenting two separate implementations for PFOS and PFOA, this model implementation represents a generic model structure, applicable also for PFAS.
 
-2. The calculation of `CvenFree`, `Cven`, `CartFree` and `Cart` was  changed to correctly present the free fraction in arterial and venous plasma.
+2. **Correction in calculation of free fractions in plasma:** The calculation of `CvenFree`, `Cven`, `CartFree` and `Cart` was changed to correctly present the free fraction in arterial and venous plasma.
 
-3. Corrected equation for lung to use `FreeLun` instead of `Free`.
+3. **Correction of lung equation:** Corrected equation for lung to use `FreeLun` instead of `Free`.
+
+4. **No built-in dosing:** The reimplementation has no built-in exposure/dosing parameters for oral dose, drinking-water concentration, inhalation, or dermal exposure.
+
+5. **Body-weight parameterisation:** The R implementation calculates body weight as `BWbirth + f(age)`. The Antimony model adds `BWRef` and `AgeRef` and scales that same age-growth function (using the `deltaBW` parameter) so body weight equals `BWRef` at `AgeRef`.
+
+6. **Physiological parameterisation:** The reimplementation exposes `FBW`, `QfilC`, `VartC` and `VvenC` as parameters, which are hard-coded in the original implementation. They can therefore be changed through the parameterisation without editing the model equations.
 
 ## Validation
 

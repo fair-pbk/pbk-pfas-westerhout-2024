@@ -8,6 +8,9 @@
         <p> 1) General model structure for PFAS. </p>
         <p> 2) Changed the calculation of CvenFree, Cven, CartFree and Cart to correctly present the free fraction. </p>
         <p> 3) Changed the &apos;Free&apos; in the lung differential equation to &apos;FreeLun&apos;. </p>
+        <p> 4) No built-in parameters for oral, drinking-water, inhalation, or dermal exposure. </p>
+        <p> 5) Body weight is parameterised by reference age and body weight and scaled by a delta body weight parameter. </p>
+        <p> 6) FBW, QfilC, VartC, and VvenC are exposed as parameters. </p>
       </body>
     </notes>
     <annotation>
